@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["psmi"]
+
+[project]
+name = "psmi"
+version = "0.2.0"
+license = {text = "LGPL-3"}
+authors = [
+  { name="Jérémie Dentan", email="65963192+DentanJeremie@users.noreply.github.com" },
+]
+description = "An implementation of Pointwise Sliced Mutual Information (PSMI) for machine learning"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy>=1.18",
+]
+
+[project.urls]
+Homepage = "https://github.com/orailix/psmi"
+Issues = "https://github.com/orailix/psmi/issues"
